@@ -6,6 +6,13 @@
     <packaging>war</packaging>
     <name>PHR_mobile-widget-hw</name>
     <version>1.0.0</version>
+    
+    <scm>
+        <connection>scm:git:git@github.com:phresco/mobile-widget-hw.git</connection>
+        <developerConnection>scm:git:git@github.com:phresco/mobile-widget-hw.git</developerConnection>
+        <url>https://github.com/phresco/mobile-widget-hw</url>
+    </scm>
+    
     <build>
         <directory>do_not_checkin/target</directory>
         <finalName>service</finalName>
