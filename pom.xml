@@ -5,7 +5,11 @@
     <artifactId>PHR_mobile-widget-hw</artifactId>
     <packaging>war</packaging>
     <name>PHR_mobile-widget-hw</name>
-    <version>1.2.0.1000-SNAPSHOT</version>
+    <version>1.0.0</version>
+	<inceptionYear>1999</inceptionYear>
+    <organization>
+        <name>Photon Infotech Inc.</name>
+    </organization>
     
     <scm>
         <connection>scm:git:git@github.com:phresco/mobile-widget-hw.git</connection>
@@ -20,7 +24,7 @@
             <plugin>
                 <groupId>com.photon.phresco.plugins</groupId>
                 <artifactId>java-maven-plugin</artifactId>
-                <version>2.0.0-SNAPSHOT</version>
+                <version>1.1.17000</version>
                 <extensions>true</extensions>
             </plugin>
             <plugin>
@@ -53,6 +57,22 @@
                     <url xmlns:ns2="http://maven.apache.org/POM/4.0.0" xmlns="">http://${server.host}:${server.port}/manager/html</url>
                     <path xmlns:ns2="http://maven.apache.org/POM/4.0.0" xmlns="">/${project.build.finalName}</path>
                     <argLine xmlns:ns2="http://maven.apache.org/POM/4.0.0" xmlns="">-Xmx512m</argLine>
+                </configuration>
+            </plugin>
+			<plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>1.1</version>
+                <configuration>
+                   <verbose>false</verbose>
+                   <processStartTag>###</processStartTag>
+                   <processEndTag>###</processEndTag>
+                  <!-- <sectionDelimiter>" "</sectionDelimiter> -->
+                   <licenseName>apache_v2</licenseName>
+				   <roots>
+				   <root>src</root>
+				   <root>test</root>
+				   </roots>
                 </configuration>
             </plugin>
         </plugins>
