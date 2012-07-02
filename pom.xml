@@ -5,7 +5,7 @@
     <artifactId>PHR_mobile-widget-hw</artifactId>
     <packaging>war</packaging>
     <name>PHR_mobile-widget-hw</name>
-    <version>1.2.0.3001-SNAPSHOT</version>
+    <version>1.2.0.5001-SNAPSHOT</version>
 	<inceptionYear>1999</inceptionYear>
     <organization>
         <name>Photon Infotech Inc.</name>
@@ -24,7 +24,7 @@
             <plugin>
                 <groupId>com.photon.phresco.plugins</groupId>
                 <artifactId>java-maven-plugin</artifactId>
-                <version>1.2.0.3001-SNAPSHOT</version>
+                <version>1.2.0.5001-SNAPSHOT</version>
                 <extensions>true</extensions>
             </plugin>
             <plugin>
